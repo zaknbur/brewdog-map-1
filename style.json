@@ -51,7 +51,7 @@
       "url": "https://snodnipper.github.io/os-zoomstack-masterclass/data/brewdog/config.json"
     }
   },
-  "sprite": "https://s3-eu-west-1.amazonaws.com/tiles.os.uk/styles/open-zoomstack-night/sprites",
+  "sprite": "https://snodnipper.github.io/os-zoomstack-masterclass/style/brewdog/sprites",
   "glyphs": "https://s3-eu-west-1.amazonaws.com/tiles.os.uk/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -69,7 +69,7 @@
       "source-layer": "sea",
       "layout": {},
       "paint": {
-        "fill-color": "#041326"
+        "fill-color": "rgba(34, 73, 82, 1)"
       }
     },
     {
@@ -228,6 +228,33 @@
       "layout": {},
       "paint": {
         "fill-color": "#1d3244"
+      }
+    },
+    {
+      "id": "buildings-glow",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "buildings",
+      "minzoom": 13,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(10, 211, 236, 0.6)",
+        "line-width": 0.8,
+        "line-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              16,
+              1
+            ]
+          ]
+        }
       }
     },
     {
@@ -2435,7 +2462,48 @@
       "id": "brewdog",
       "type": "symbol",
       "source": "brewdog",
-      "source-layer": "brewdog"
+      "source-layer": "brewdog",
+      "layout": {
+        "text-font": [
+          "Source Sans Pro Bold"
+        ],
+        "text-field": "{name}",
+        "icon-image": "brewdog",
+        "text-offset": [
+          0,
+          1.7
+        ],
+        "icon-size": {
+          "stops": [
+            [
+              5,
+              0.3
+            ],
+            [
+              12,
+              0.7
+            ]
+          ]
+        },
+        "text-size": 14,
+        "text-max-width": 20,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(6, 211, 247, 1)",
+        "text-opacity": {
+          "stops": [
+            [
+              7,
+              0
+            ],
+            [
+              12,
+              1
+            ]
+          ]
+        }
+      }
     }
   ],
   "created": "2018-05-14T11:52:45.494Z",
