@@ -1,7 +1,8 @@
 repo_name: zaknbur/brewdog-map-1
 report_id: 02cf31cb6f441c8591f154d81c9cefc0
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-23T15:36:11+00:00'
+timestamp: '2024-01-05T08:35:27+00:00'
 requested_by: snodnipper
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/zaknbur/brewdog-map-1
   detection_source: Repo Metadata
 - name: HTML
   description: Hypertext Markup Language for creating web pages.
@@ -22,6 +24,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/2270/no-img-open-source.png
+  detection_source_url: https://github.com/zaknbur/brewdog-map-1/blob/master/index.html
   detection_source: index.html
   last_updated_by: Ollie Snowden
   last_updated_on: 2018-09-14 11:34:54.000000000 Z
